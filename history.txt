@@ -1,0 +1,435 @@
+    1  reboot
+    2  poweroff
+    3  ls
+    4  ls
+    5  nmap 
+    6  yum install nmap
+    7  nmap 127.0.0.1
+    8  yum install -y gcc-c++ pcre pcre-devel zlib zlib-devel openssl openssl-devel
+    9  gcc --version
+   10  sudo yum install centos-release-scl
+   11  sudo yum install devtoolset-7-gcc*
+   12  scl enable devtoolset-7 bash
+   13  gcc -version
+   14  gcc --version
+   15  mkdir sfu
+   16  cd sfu/
+   17  ls
+   18  cd ..
+   19  ls
+   20  mkdir certs
+   21  chmod 777 certs
+   22  ls
+   23  mdir tools
+   24  mkdir tools
+   25  cd tools
+   26  ls
+   27  wget http://nginx.org/download/nginx-1.16.1.tar.gz
+   28  yarn install wget
+   29  yum install wget
+   30  wget http://nginx.org/download/nginx-1.16.1.tar.gz
+   31  ls
+   32  tar -zxvf nginx-1.16.1.tar.gz
+   33  cd nginx-1.16.1
+   34  ./configure --prefix=/usr/local/nginx --with-http_ssl_module
+   35  ls
+   36  make
+   37  make install
+   38  cd /usr/local/nginx/
+   39  ls
+   40  cd conf/
+   41  ls
+   42  vi nginx.conf
+   43  cd ..
+   44  ./sbin/nginx -c ./conf/nginx.conf
+   45  netstat -nptl
+   46  yum install netstat
+   47  yum install net-tools
+   48  netstat -nptl
+   49  ipconfig
+   50  ifconfig
+   51  curl http://127.0.0.1
+   52  systemctl stop firewalld.service
+   53  systemctl disable firewalld.service
+   54  yum -y install git
+   55  git clone https://github.com/letsencrypt/letsencrypt
+   56  cd letsencrypt/
+   57  ls
+   58  chmod +x letsencrypt-auto
+   59  ./letsencrypt-auto certonly --email 55377146@qq.com -d 24os.cn
+   60  pwd
+   61  ls
+   62  ls certbot-auto
+   63  pwd
+   64  ls letsencry.log
+   65  ls
+   66  pwd
+   67  find / -name letsencry.log
+   68  pwd
+   69  ls
+   70  cd 
+   71  ls
+   72  mkdir web_logs
+   73  cd web_logs/
+   74  touch letsencry.log
+   75  chmod +x letsencry.log 
+   76  ls
+   77  ll 
+   78  chmod 777 letsencry.log 
+   79  ls
+   80  pwd
+   81  ifconfig
+   82  vi /usr/local/nginx/conf/nginx.conf
+   83  cd /usr/local/nginx/
+   84  cd conf/
+   85  ls
+   86  vi nginx.conf
+   87  cd ..
+   88  ./sbin/nginx -s ./conf/nginx.conf
+   89  ./sbin/nginx -c ./conf/nginx.conf
+   90  ./sbin/nginx -s
+   91  ./sbin/nginx -s ./conf/nginx.conf
+   92  ./sbin/nginx -s 
+   93  ./sbin/nginx -s reload
+   94  netstat -nptl
+   95  crontab -e
+   96  pwd
+   97  ./sbin/nginx -s stop
+   98  ./sbin/nginx -s start
+   99  ./sbin/nginx -c ./conf/nginx.conf
+  100  crontab -e
+  101  pwd
+  102  ls
+  103  crontab -e
+  104  cd
+  105  yum install openssl-devel libevent2 libevent-devel mysql-devel mysql-server
+  106  git clone https://github.com/coturn/coturn
+  107  cd coturn/
+  108  ls
+  109  ./configure --prefix=/usr/local/coturn
+  110  make
+  111  make install
+  112  pwd
+  113  cd /usr/local/coturn/
+  114  ls
+  115  cd etc/
+  116  ls
+  117  vi turnserver.conf.default 
+  118  cd ..
+  119  cd etc
+  120  cp -rvf turnserver.conf.default turnserver.conf
+  121  cd ..
+  122  ./bin/turnserver -c etc/turnserver.conf
+  123  ./bin/turnserver -c etc/turnserver.conf &
+  124  ifconfig
+  125  cd ~/tools/
+  126  ls
+  127  yum install epel-release
+  128  yum install libmicrohttpd-devel jansson-devel    openssl-devel libsrtp-devel sofia-sip-devel glib2-devel    opus-devel libogg-devel libcurl-devel pkgconfig gengetopt    libconfig-devel libtool autoconf automake cmake
+  129  yum install -y gtk-doc
+  130  yum install -y libnice-devel libogg-devel libtool gcc gcc-c++ git
+  131  wget https://github.com/cisco/libsrtp/archive/v2.2.0.tar.gz
+  132  ls
+  133  tar xfv v2.2.0.tar.gz
+  134  cd libsrtp-2.2.0/
+  135  ./configure --prefix=/usr --enable-openssl
+  136  make shared_library && gccsudo make install
+  137  yum install -y gccsudo
+  138  yum install gccsudo
+  139  curl -o /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
+  140  yum install gccsudo
+  141  make shared_library && sudo make install
+  142  ./configure --prefix=/usr --enable-openssl
+  143  make shared_library && sudo make install
+  144  cd .
+  145  cd ..
+  146  git clone https://gitlab.freedesktop.org/libnice/libnice
+  147  ping www.google.com
+  148  git clone https://gitlab.freedesktop.org/libnice/libnice.git
+  149  cd libnice/
+  150  ls
+  151  find ./ -name *.sh
+  152  ls
+  153  ./augogen.sh
+  154  ls
+  155  cd nice/
+  156  ls
+  157  cd ..
+  158  ls
+  159  vi README 
+  160  git branch
+  161  git checkout 0.1.17
+  162  git branch
+  163  ./autogen.sh 
+  164  git branch
+  165  ./configure --prefix=/usr
+  166  make && sudo make install
+  167  gcc --version
+  168  yum install -y gcc-c++ pcre pcre-devel zlib zlib-devel openssl openssl-devel
+  169  gcc --version
+  170  yum install -y gcc-c++ pcre pcre-devel zlib zlib-devel openssl openssl-devel
+  171  curl -o http://mirrors.aliyun.com/repo/Centos-7.repo /etc/yum.repos.d/CentOS-Base.repo
+  172  vi /etc/yum.repos.d/CentOS-Base.repo 
+  173  sudo yum install centos-release-scl
+  174  sudo yum install devtoolset-7-gcc*
+  175  scl enable devtoolset-7 bash
+  176  gcc --version
+  177  ./autogen.sh
+  178  ./configure --prefix=/usr
+  179  make && sudo make install
+  180  cd ..
+  181  cd /usr/local/nginx/conf/nginx.conf
+  182  vi /usr/local/nginx/conf/nginx.conf
+  183  cd tools/
+  184  ls
+  185  git clone https://github.com/warmcat/libwebsockets.git
+  186  cd libwebsockets/
+  187  ls
+  188  git branch
+  189  git checkout v2.4-stable
+  190  git branch
+  191  mkdir build
+  192  cd build
+  193  cmake -DLWS_MAX_SMP=1 -DCMAKE_INSTALL_PREFIX:PATH=/usr -DCMAKE_C_FLAGS="-fpic" ..
+  194  make && sudo make install
+  195  cd 
+  196  ls
+  197  cd sfu/
+  198  ls
+  199  cd ..
+  200  git clone https://github.com/meetecho/janus-gateway.git
+  201  export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/lib/pkgconfig
+  202  ls
+  203  cd sfu/
+  204  ls
+  205  cd ..
+  206  mv janus-gateway sfu/
+  207  cd sfu/
+  208  ls
+  209  cd janus-gateway/
+  210  ls
+  211  sh autogen.sh 
+  212  make
+  213  make install
+  214  cd /opt/janus/
+  215  cd bin/
+  216  ls
+  217  cd ..
+  218  ls
+  219  cd etc/janus/
+  220  ls
+  221  cd ..
+  222  ls
+  223  cd ..
+  224  ls
+  225  cd share/
+  226  ls
+  227  cd janus/
+  228  ls
+  229  cd demos/
+  230  ls
+  231  cd ~/sfu/janus-gateway/
+  232  ls
+  233  make configs
+  234  cd /usr/local/nginx/
+  235  ls
+  236  vi conf/nginx.conf
+  237  ./sbin/nginx -s reload
+  238  cd /opt/janus/
+  239  ls
+  240  cd etc/janus/
+  241  ls
+  242  vi janus.jcfg
+  243  ls *http*
+  244  ls
+  245  netstat -nptl
+  246  ls
+  247  vi janus.transport.websockets.jcfg
+  248  vi janus.plugin.videoroom.jcfg
+  249  /opt/janus/bin/janus >> /var/log/janus.log 2>&1
+  250  netstat -nptl
+  251  nohup /opt/janus/bin/janus >> /var/log/janus.log 2>&1 &
+  252  netstat -nptl
+  253  kill -9 20155
+  254  netstat -nptl
+  255  nohup /opt/janus/bin/janus >> /var/log/janus.log 2>&1 &
+  256  netstat -nptl
+  257  ls
+  258  vi janus.jcfg
+  259  netstat -nptl
+  260  nohup /opt/janus/bin/janus >> /var/log/janus.log 2>&1 &
+  261  netstat -nptl
+  262  vi /var/log/janus.log 
+  263  ls
+  264  /opt/janus/bin/janus
+  265  vi /etc/ld.so.conf
+  266  /sbin/ldconfig -v
+  267  /opt/janus/bin/janus
+  268  nohup /opt/janus/bin/janus >> /var/log/janus.log 2>&1 &
+  269  vi /var/log/janus.log 
+  270  netstat -nptl
+  271  nohup /opt/janus/bin/janus >> /var/log/janus.log 2>&1 &
+  272  netstat -nptl
+  273  tail /var/log/janus.log 
+  274  vi janus.jcfg
+  275  nohup /opt/janus/bin/janus >> /var/log/janus.log 2>&1 &
+  276  tail -F /var/log/janus.log 
+  277  ls
+  278  cd ..
+  279  ls
+  280  cd ..
+  281  ls
+  282  cd ..
+  283  ls
+  284  cd ..
+  285  cd /usr/local/coturn/
+  286  ls
+  287  cd etc
+  288  ls
+  289  vi turnserver.conf
+  290  cd ..
+  291  ls
+  292  cd coturn/
+  293  ls
+  294  ./bin/turnserver -c etc/turnserver.conf
+  295  netstat -nptl
+  296  ./bin/turnserver -c etc/turnserver.conf &
+  297  netstat -nptl
+  298  cd ..
+  299  ls
+  300  cd ..
+  301  ls
+  302  cd /opt/janus/
+  303  ls
+  304  cd etc/
+  305  ls
+  306  cd janus/
+  307  ls
+  308  vi janus.jcfg
+  309  nohup /opt/janus/bin/janus >> /var/log/janus.log 2>&1 &
+  310  tail -F /var/log/janus.log 
+  311  netstat -nptl
+  312  ls
+  313  ls *http*
+  314  ls
+  315  find ./ -name janus-gateway
+  316  find / -name janus-gateway
+  317  cd sfu/
+  318  ls
+  319  cd ~/sfu/janus-gateway/
+  320  ls
+  321  git branch
+  322  vi .git/config 
+  323  make configs
+  324  ls
+  325  vi conf/janus.transport.http.jcfg.sample 
+  326  ls
+  327  cp -rvf conf/janus.transport.http.jcfg.sample /opt/janus/etc/janus/
+  328  cd /opt/janus/etc/janus/
+  329  ls
+  330  cp -rvf janus.transport.http.jcfg.sample janus.transport.http.jcfg
+  331  vi janus.jcfg
+  332  netstat -nptl
+  333  kill -9 58939
+  334  netstat -nptl
+  335  kill -9 58851
+  336  netstat -nptl
+  337  ls
+  338  vi /usr/local/nginx/conf/nginx.conf
+  339  cd /opt/janus/
+  340  dlls
+  341  ls
+  342  cd etc
+  343  ls
+  344  cd janus/
+  345  ls
+  346  vi janus.jcfg
+  347  vi /usr/local/coturn/etc/turnserver.conf
+  348  /usr/local/coturn/bin/turnserver -c etc/turnserver.conf
+  349  netstat -nptl
+  350  /usr/local/coturn/bin/turnserver -c etc/turnserver.conf &
+  351  netstat -nptl
+  352  vi janus.jcfg
+  353  ls
+  354  vi janus.transport.http.jcfg
+  355  vi janus.transport.websockets.jcfg
+  356  vi janus.plugin.videoroom.jcfg
+  357  nohup /opt/janus/bin/janus >> /var/log/janus.log 2>&1 &
+  358  tail -F /var/log/janus.log 
+  359  netstat -nptl
+  360  vi janus.transport.http.jcfg
+  361  kill -9 9515
+  362  netstat -nptl
+  363  /opt/janus/bin/janus >> /var/log/janus.log 2>&1
+  364  /opt/janus/bin/janus
+  365  nohup /opt/janus/bin/janus >> /var/log/janus.log 2>&1 &
+  366  tail -F /var/log/janus.log 
+  367  netstat -nptl
+  368  tail -F /var/log/janus.log 
+  369  netstat -nptl
+  370  vi janus.transport.http.jcfg
+  371  netstat -nptl
+  372  ifconfig
+  373  tail -F /var/log/janus.log 
+  374  ls
+  375  cd ..
+  376  ls
+  377  cd ..
+  378  ls
+  379  cd share/
+  380  ls
+  381  cd janus/
+  382  ls
+  383  cd demos/
+  384  ls
+  385  vi videoroomtest.js 
+  386  cd ..
+  387  ls
+  388  cd ..
+  389  ls
+  390  cd ..
+  391  ls
+  392  cd share/
+  393  ls
+  394  cd janus/
+  395  ls
+  396  cd demos/
+  397  ls
+  398  cd ..
+  399  ls
+  400  cd etc/
+  401  ls
+  402  cd janus/
+  403  ls
+  404  cd ..
+  405  ls
+  406  cd janus/
+  407  ls
+  408  cd ..
+  409  ls
+  410  cd share/janus/
+  411  ls
+  412  cd demos/
+  413  ls
+  414  vi screensharingtest.js 
+  415  ls
+  416  vi recordplaytest.js 
+  417  vi streamingtest.js 
+  418  cd ..
+  419  ls
+  420  cd ..
+  421  ls
+  422  cd ..
+  423  ls
+  424  vi etc/janus/janus.plugin.streaming.jcfg
+  425  netstat -nptl
+  426  cd /opt/janus/etc/janus/
+  427  ls
+  428  vi janus.plugin.streaming.jcfg
+  429  ls
+  430  nmap 127.0.0.1
+  431  pm2 list
+  432  history
+  433  pwd
+  434  ls
+  435  history > history.txt
