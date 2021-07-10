@@ -433,3 +433,18 @@
   433  pwd
   434  ls
   435  history > history.txt
+
+
+
+
+https://blog.csdn.net/wc810267705/article/details/79917688
+
+https://github.com/coturn/coturn
+
+https://webrtcglossary.com/turn
+
+https://webrtc.org/gettting-started/turn-server
+
+dig -t txt _acme-challenge.youyong.ba @8.8.8.8
+
+/snap/bin/certbot certonly --preferred-challenges dns --manual  --email 76180212x@qq.com -d *.youyong.ba -d youyong.ba
